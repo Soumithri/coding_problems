@@ -1,6 +1,6 @@
 # coding_problems
 
-Coding problems is a repository which has solutions to top interview coding problems in Python 3.
+Coding problems is a repository which has solutions to top interview coding questions in Python 3.
 
 ## Requirements
 
