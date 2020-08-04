@@ -4,7 +4,7 @@ def reverse_words(message):
     current_word_start_index = 0
     for i in range(len(message)+1):
         if i == len(message):
-            reverse_characters(message, current_word_start_index, i-1)        
+            reverse_characters(message, current_word_start_index, i-1)
         elif (message[i] == ' '):
             reverse_characters(message, current_word_start_index, i-1)
             current_word_start_index = i + 1
