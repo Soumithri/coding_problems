@@ -1,6 +1,10 @@
 import unittest
 
-from coding_problems.src.arrays.reverse_array_inplace import reverse_array
+try:
+    from coding_problems.src.arrays.reverse_array_inplace import reverse_array
+except ImportError as e:
+    from coding_problems.src.arrays.answers.reverse_array_inplace import \
+        reverse_array
 
 
 class Test_Reverse_Array_Inplace(unittest.TestCase):

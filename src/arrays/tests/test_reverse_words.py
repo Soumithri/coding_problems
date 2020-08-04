@@ -1,6 +1,10 @@
 import unittest
 
-from coding_problems.src.arrays.reverse_words_inplace import reverse_words
+try:
+    from coding_problems.src.arrays.reverse_words_inplace import reverse_words
+except ImportError as identifier:
+    from coding_problems.src.arrays.answers.reverse_words_inplace import \
+        reverse_words
 
 
 class Test(unittest.TestCase):
