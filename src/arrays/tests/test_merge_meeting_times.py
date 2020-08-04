@@ -1,6 +1,10 @@
 import unittest
 
-from coding_problems.src.arrays.merge_meeting_times import merge_meeting
+try:
+    from coding_problems.src.arrays.merge_meeting_times import merge_meeting
+except ImportError as e:
+    from coding_problems.src.arrays.answers.merge_meeting_times import \
+        merge_meeting
 
 
 class Test_Merge_Meeting_Times(unittest.TestCase):
