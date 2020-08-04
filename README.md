@@ -11,7 +11,17 @@ Coding problems is a repository which has solutions to top interview coding ques
 Python scripts are best run through ``dockers`` since it promotes uniformness across different operating systems.
 
 ```bash
-docker-compose run --rm code python src/arrays/helloworld.py shell
+docker-compose run --rm code python src/arrays/hello_world.py
+```
+
+To run all unit tests:
+```bash
+docker-compose run --rm code pytest 
+```
+
+To run a specific unit test:
+```
+docker-compose run --rm code pytest src/arrays/tests/test_hello_world.py
 ```
 
 ## Contributing

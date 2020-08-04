@@ -5,4 +5,4 @@ services:
     image: soumithri93/coding_problems:08.03.2020
     build: .
     volumes:
-      - .:/usr/src/app
+      - .:/coding_problems

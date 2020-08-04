@@ -1,5 +1,5 @@
 import unittest
-from coding_problems.src.arrays.sample_test import test
+from coding_problems.src.arrays.hello_world import test
 
 
 class HelloWorldTest(unittest.TestCase):
