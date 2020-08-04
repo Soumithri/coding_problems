@@ -1,5 +1,7 @@
 # coding_problems
 
+[![Build Status](https://travis-ci.org/Soumithri/coding_problems.svg?branch=master)](https://travis-ci.org/Soumithri/coding_problems)
+
 Coding problems is a repository which has solutions to top interview coding questions in Python 3.
 
 ## Requirements
