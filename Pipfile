@@ -10,6 +10,8 @@ pylint = "*"
 pycodestyle = "*"
 pydocstyle = "*"
 pytest = "*"
+coverage = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.8"

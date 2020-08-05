@@ -9,4 +9,7 @@ install:
 # run the tests
 script:
   - export PYTHONPATH=$PYTHONPATH:$(pwd)
-  - pytest src/
+  - pytest --cov-config=.coveragerc --cov=src
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
