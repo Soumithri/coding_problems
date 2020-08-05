@@ -16,7 +16,7 @@ install: "make"
 # run the tests
 script:
   - make test
-  - sonar-scanner -Dsonar.verbose=true -X
+  - make static-code-scan
 
 # upload coverage report to codecov
 after_success:
