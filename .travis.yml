@@ -3,13 +3,15 @@ python:
   - "3.8"
 
 # install dependencies
-install:
-  - pip install -r requirements.txt
+install: "make"
 
 # run the tests
 script:
-  - export PYTHONPATH=$PYTHONPATH:$(pwd)
-  - pytest --cov-config=.coveragerc --cov=src
+  - make test
 
+# cache pip dependencies
+cache: pip
+
+# upload coverage report to codecov
 after_success:
   - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
