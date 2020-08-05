@@ -1,7 +1,6 @@
 init:
-	export PYTHONPATH=$PYTHONPATH:$(pwd)
-    pip install pipenv
-    pipenv install
+	pip install pipenv
+	pipenv install
 
 test:
-    pytest --cov-config=.coveragerc --cov=src
+	pytest --cov-config=.coveragerc --cov=src
