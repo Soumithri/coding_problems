@@ -1,8 +1,8 @@
 import unittest
 try:
-    from coding_problems.src.greedy.highest_product_of_3 import solution
+    from coding_problems.src.algorithms.highest_product_of_3 import solution
 except ImportError as e:
-    from coding_problems.src.greedy.answers.highest_product_of_3 import \
+    from coding_problems.src.algorithms.answers.highest_product_of_3 import \
         solution
 
 
