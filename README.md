@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Soumithri/coding_problems.svg?branch=master)](https://travis-ci.org/Soumithri/coding_problems)
 [![codecov](https://codecov.io/gh/Soumithri/coding_problems/branch/master/graph/badge.svg)](https://codecov.io/gh/Soumithri/coding_problems)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Soumithri_coding_problems&metric=alert_status)](https://sonarcloud.io/dashboard?id=Soumithri_coding_problems)
 
 Coding problems is a repository which has solutions to top interview coding questions in Python 3.
 

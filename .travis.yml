@@ -9,8 +9,6 @@ cache: pip
 addons:
   sonarcloud:
     organization: "soumithri-sonar-organization"
-    token:
-      secure: "CI+wjKK6MGtIPe9vZ3BNDfUFkb6LpbdSu10mXRO4GTgXbmD6FdEDvlHaAu2JoCucdnCK3WpRiq3P3EkXM0Pt3KLDPHLXjlv4ko8KJhQmyak61xJ59eNcTZ+EYRg+9m34C8aFNRWqblHwPBMY3dqfVQb1S4qxIh7TR87YVRS6/a9mATxW0yBgTEImXlqKpXXc2Mm+yiqRWpjh4SeRSxx+xku/WH0fefS4onjk0rt7SNpFxk15zMIgJ4pF6qxR7cA00ymRFHG1JHPU3iZ0Nphf93ZppYVRLN7yDjBdHuMoRRhxnDJDfZJOplLv4pqyN/GwZPzbs4UeZ6+mzLM71j1bHkAdlWt6sqNwCxI7dOI/T7v7wq848FLfCuaagsH/qdnbxHPfWxF/W72zWh6hqfGv/K9g83BpIEczrNvIDYWUgBjcHAWkuczro4+lB7B2wOY9rDWpKLjhpbQX7XUUwbapBSM+43NJhZG1vLVln6Qhur4rw8BKSV793dnFIvbQDi1+Fj9UCNTdu7sP9wkZR/sy6OCy/ib+Xts/bXz9//rZREV76QLfYIhip6AhD/jwY3HYrnWcnUDmUZjM5Y6cfLLZA0boSAxJfrlvYXop8rhTaQTtB8EgSTSZHS0KiaJ9wvM7kgazIsWFklvVCapmNOyBn7cNAc1+krFXyn42p4RhNqs="
 
 # install dependencies
 install: "make"
@@ -18,7 +16,7 @@ install: "make"
 # run the tests
 script:
   - make test
-  - make static_code_scan
+  - sonar-scanner -Dsonar.verbose=true -X
 
 # upload coverage report to codecov
 after_success:
