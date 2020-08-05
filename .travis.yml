@@ -2,9 +2,6 @@ language: python
 python:
   - "3.8"
 
-# cache pip dependencies
-cache: pip
-
 # addons here
 addons:
   sonarcloud:
@@ -17,6 +14,9 @@ install: "make"
 script:
   - make test
   - make static-code-scan
+
+# cache pip dependencies
+cache: pip
 
 # upload coverage report to codecov
 after_success:
