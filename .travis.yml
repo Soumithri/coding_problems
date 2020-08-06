@@ -2,12 +2,18 @@ language: python
 python:
   - "3.8"
 
+# addons here
+addons:
+  sonarcloud:
+    organization: "soumithri-sonar-organization"
+
 # install dependencies
 install: "make"
 
 # run the tests
 script:
   - make test
+  - make static-code-scan
 
 # cache pip dependencies
 cache: pip
