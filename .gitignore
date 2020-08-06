@@ -9,3 +9,6 @@ htmlcov/
 .coverage.*
 coverage.xml
 *.cover
+
+# sonar scans
+.scannerwork/
