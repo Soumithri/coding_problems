@@ -1,5 +1,5 @@
 [run]
-omit = *__init__*, src/arrays/tests/*, src/hashes/tests/*, src/algorithms/tests/*
+omit = *__init__*, src/*/tests/*
 
 [xml]
 output = 'coverage.xml'
